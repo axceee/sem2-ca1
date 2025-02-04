@@ -5,7 +5,7 @@ const restaurantSchema = new mongoose.Schema({
     city:{type:String,require:true},
     items:[{
         type:mongoose.Schema.Types.ObjectId,
-        ref:Items
+        ref:'Items'
     }]
 },{timestamps:true})
 
